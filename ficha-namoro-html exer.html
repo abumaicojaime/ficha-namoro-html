@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Inscricao</title>
+    <style>
+   body{
+    background: rgb(51, 135, 224);
+font: normal 16px arial;
+color: white;
+
+}
+   header{
+    margin-top: 40px;
+    color: white;
+text-align: center;
+margin-bottom: 15px;
+font: normal 16pt arial;
+   }
+section{
+background: rgba(33, 12, 12, 0.353);
+padding: 16px;
+width: 500px;
+margin: auto;
+border-radius: 10px;
+box-shadow: 5px 5px 5px rgb(63, 62, 62);
+
+}
+#form{
+text-align: center;
+padding: 6px;
+}
+footer{
+    margin-top: 20px;
+    text-align: center;
+font-style: italic;
+color: white;
+
+}
+input{
+    margin-left: 2px;
+    border-radius: 8px;
+box-shadow: 2px 2px 2px rgb(247, 246, 246);
+padding: 2px;
+}
+input:hover{
+    background: rgb(220, 236, 237);
+}
+#qualidades{
+padding: 1px;
+color: blue;
+border: none;
+width: 220px;
+
+
+}
+#defeitos{
+padding: 1px;
+color: blue;
+border: none;
+width: 250px;
+}
+table{
+    padding: 6px;
+}
+#in2{
+width: 230px;  
+border-radius: 0px;  
+
+}
+#in2:hover{
+    background: none;
+}
+button{
+margin-left: 10px;
+width: 100px;
+color: rgb(88, 88, 248);
+border: none;
+font: normal 15pt arial;
+}
+button:hover{
+    background: rgba(2, 251, 39, 0.894);
+}
+
+</style>
+</head>
+
+<body>
+<header>Ficha de Inscrição para me namorar</header> 
+    <section>
+<div id="form"> 
+<label for="nome">nome:</label> <input type="text" name="nome" id="nome">
+<label for="idade">idade</label><input type="number" name="idade" id="idade"><br>
+<label for="cidade">Cidade</label><input type="text" name="cidade" id="cidade">
+<label for="telefone">Telefone</label><input type="text" name="telefone" id="telefone"><br>
+</div>
+<div>
+ interessado(a) em:   <br>
+ <label for="serio">Namoro serio</label><input type="radio" name="serio" id="serio">
+<label for="lance">só um lance</label> <input type="radio" name="lance" id="lance">
+<label for="casamento">Casamento</label><input type="radio" name="casamento" id="casamento" >
+<br>
+</div>
+<table>
+    <tr>
+        <td><div id="qualidades">Qualidades</div></td>
+        <td><div id="defeitos">Defeitos</div></td>
+    </tr>
+    <tr>
+        <td><input type="text" id="in2"></td>
+        <td><input type="text" id="in2"></td>
+    </tr>
+    <tr>
+        <td><input type="text" id="in2"></td>
+        <td><input type="text" id="in2"></td>
+    </tr>
+    <tr>
+        <td><input type="text" id="in2"></td>
+        <td><input type="text" id="in2"></td>
+    </tr>
+</table>
+<button onclick="clicar()">Enviar</button>
+    </section>
+    <footer>&copy;AJ&trade;</footer>
+    <script>
+        function clicar(){
+  window.alert('Enviado com sucesso')          
+        }
+    </script>
+</body>
+</html>
